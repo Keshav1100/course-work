@@ -1,0 +1,27 @@
+/* Block */
+.paragraph {
+  margin-bottom: 1rem;
+}
+
+/* Elements -> denoted by 2 underscores*/
+.paragraph__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.paragraph__body {
+  font-size: 1rem;
+}
+
+/* Modifiers -> using 2 hyphens after the block name*/
+.paragraph--primary {
+  color: blue;
+}
+
+.paragraph--secondary {
+  color: green;
+}
+
+.paragraph--tertiary {
+  color: red;
+}

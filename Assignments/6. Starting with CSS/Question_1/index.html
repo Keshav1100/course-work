@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 1 | Different ways to add CSS</title>
+
+    <!-- Adding internal CSS -->
+    <style>
+      .internal-css {
+        background-color: blue;
+        color: #f5f5f5;
+      }
+
+      /* Trying to add style to external-css class tag through internal css but will not work*/
+      .external-css {
+        background-color: white;
+        color: brown;
+      }
+      /* Now the above thing will be tried by below method and will work. */
+      div.external-css {
+        background-color: white;
+        color: brown;
+      }
+
+      /*  Above, we are targeting the element more specifically using more specified selection as otherwise the external css specifity will be more and could noot be overwitten.*/
+      /* This proves that targeting the same elements with different styling methods, css specifcity needs to be considered as it can bypass the priority order of diffetent ways of adding css  */
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- External CSS -->
+  </head>
+  <body>
+    <!-- Q. Create a simple page with some div tags and show different ways to add CSS as well as what happens when you target the same elements with inline, internal, and CSS. Also, utilize comments in the project where required. -->
+
+    <!-- Div with inline CSS -->
+    <div class="inline-css" style="background-color: black; color: #f5f5f5">
+      This div has inline CSS.
+    </div>
+    <!-- Div with internal CSS -->
+    <div class="internal-css" style="color: crimson">
+      This div has internal CSS.
+    </div>
+    <!-- In above div, the inline css added overwrites the internal css as inline has higher priority -->
+
+    <!-- Div with external CSS -->
+    <div class="external-css">This div has external CSS.</div>
+
+    <!-- Through above sample, we can see that the priority of CSS styling in case a single element is targeted through different methods is as follow:
+            inline > internal > external
+    -->
+  </body>
+</html>

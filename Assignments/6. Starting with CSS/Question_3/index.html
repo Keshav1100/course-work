@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 3 | Styling a form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Q. Develop an HTML form with various input elements. Use CSS to style the form, including setting background colors for input fields. Create a custom color palette for the form elements, and demonstrate how to apply opacity to one of the form sections -->
+    <form action="#">
+      <div class="form-section">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+      </div>
+
+      <div class="form-section">
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+      </div>
+
+      <div class="form-section form-section--secondary">
+        <label for="message">Message</label>
+        <textarea type="text" id="message" rows="5"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

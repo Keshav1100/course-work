@@ -1,0 +1,57 @@
+/* Custom color palette */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --tertiary-color: #fff;
+}
+
+/* Form styling */
+form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.25rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+textarea {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.25rem;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+label {
+  color: #262626;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Opacity to form section */
+.form-section--secondary {
+  opacity: 0.5;
+}
