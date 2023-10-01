@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  width: max-content;
+  margin: 2em auto;
+  background-color: #ffcc02b9;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  letter-spacing: 0.025em;
+  opacity: 1;
+  transition: opacity 0.1s ease;
+}
+.card .card-img {
+  border-radius: 0.8em;
+}
+.card h2 {
+  font-size: 1.2em;
+}
+.card:hover {
+  opacity: 0.5;
+}
+
+/* The question text and sample images given do not match because as per question text given , the card should be semi-transparent by default but as per sample image, it's opposite. So, I have followed the sample images to complete the assignment. */

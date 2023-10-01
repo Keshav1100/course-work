@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1.2em;
+  font-weight: 550;
+  letter-spacing: 0.025em;
+}
+nav {
+  width: 100%;
+  background-color: #007bff;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0.8rem 1rem;
+  margin-inline: 0.4em;
+  border-color: #262626;
+  border-width: 2px;
+}
+/* Changing navigation item's color on hover */
+nav ul li a:hover {
+  color: #262626;
+}
+/* Adding differemt border style to each navigation item */
+nav ul li:nth-child(1) {
+  border-style: dashed;
+}
+nav ul li:nth-child(2) {
+  border-style: dotted;
+}
+nav ul li:nth-child(3) {
+  border-style: double;
+}
+nav ul li:nth-child(4) {
+  border-style: groove;
+}
+nav ul li:nth-child(5) {
+  border-style: ridge;
+}

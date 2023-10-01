@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  width: max-content;
+  margin: 2em auto;
+  background-color: #ffcc02b9;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  letter-spacing: 0.025em;
+}
+.card .card-img {
+  border-radius: 0.8em;
+}
+.card h2 {
+  font-size: 1.2em;
+}
