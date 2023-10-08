@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 5 | z-index</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>Q. Explain the z-index, with a code example.</h2>
+      <h2>A.</h2>
+      <p>
+        The z-index property in CSS is used to control the stacking order of
+        positioned elements along the z-axis (front-to-back). This property is
+        particularly useful when we have overlapping elements on a webpage, and
+        we want to specify which element should appear on top
+      </p>
+      <h3>Example:</h3>
+      <div class="example">
+        <div class="box" id="box1">Box-1</div>
+        <div class="box" id="box2">Box-2</div>
+      </div>
+      <p>
+        In below example, even though box-1 was created before so it should
+        appear behind, but since it has a higher z-index property, it is
+        appearing in front/on top.
+      </p>
+    </div>
+  </body>
+</html>

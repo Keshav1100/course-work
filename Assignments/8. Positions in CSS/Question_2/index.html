@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 2 | Absolute & Relative Positioning</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>
+      Q. Explain the difference between Absolute and Relative positioning.
+    </h2>
+    <h2>A.</h2>
+    <div class="box">
+      <h3>Absolute Positioning</h3>
+      <p>
+        Absolute positioning involves placing an HTML element
+        <u> relative to its nearest positioned ancestor</u> or, if none exists,
+        relative to the initial containing block (usually the viewport). The
+        element is <u> removed from the normal document flow</u>, meaning it
+        doesn't affect the position of other elements. The precise position is
+        determined using the top, right, bottom, or left properties. This method
+        is commonly employed for creating overlays or pop-up menus, where the
+        element needs to be positioned precisely on the page, independently of
+        other elements.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Realtive Positioning</h3>
+      <p>
+        Relative positioning positions an HTML element
+        <u> relative to its normal position </u> in the document flow. The
+        element <u> retains its space in the normal flow </u>, affecting the
+        positioning of other elements around it. Like absolute positioning, the
+        top, right, bottom, or left properties can be used to offset the element
+        from its default position. This method is useful for making small
+        adjustments to the position of elements while keeping them in the
+        document flow. Unlike absolute positioning, it doesn't remove the
+        element from the normal flow, making it suitable for scenarios where the
+        element should still occupy space on the page.
+      </p>
+    </div>
+  </body>
+</html>
