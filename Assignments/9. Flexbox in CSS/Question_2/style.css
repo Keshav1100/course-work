@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container {
+  padding: 1em;
+  min-height: 100vh;
+  background-color: #262626;
+  color: #f5f5f5;
+  letter-spacing: 0.025em;
+}
+.main-container .answer,
+.question {
+  margin-block: 0.4em;
+  padding: 1em;
+  border-radius: 4px;
+  background-color: #505050;
+}
+.question {
+  padding: 0.5em;
+}
+.question ol,
+.answer ol {
+  margin-left: 2%;
+}
+.answer ol li {
+  margin-block: 0.5em;
+}
+strong {
+  font-weight: 650;
+}
