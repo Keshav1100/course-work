@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.gallery {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  padding: 20px;
+}
+.gallery div {
+  display: block;
+  min-height: 200px;
+  border-radius: 10px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+#image-1 {
+  grid-column: 1/3;
+  grid-row: 1/1;
+  background: url("https://images.pexels.com/photos/40799/paper-colorful-color-loose-40799.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: center;
+}
+#image-2 {
+  background: url("https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+#image-3 {
+  background: url("https://images.pexels.com/photos/801885/pexels-photo-801885.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+#image-4 {
+  background: url("https://images.pexels.com/photos/3635300/pexels-photo-3635300.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+#image-5 {
+  background: url("https://images.pexels.com/photos/8264573/pexels-photo-8264573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+#image-6 {
+  background: url("https://images.pexels.com/photos/4215113/pexels-photo-4215113.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
