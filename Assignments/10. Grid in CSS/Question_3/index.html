@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 3 | grid-auto-row & grid-auto-column</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Q. Explain the use of grid-auto-row and grid-auto-column using code examples. -->
+    <div class="main-container">
+      <div class="question">
+        <h2>
+          Q. Explain the use of grid-auto-row and grid-auto-column using code
+          examples.
+        </h2>
+      </div>
+      <div class="answer">
+        <h2>A.</h2>
+        <p>
+          <strong> &apos;grid-auto-row&apos; </strong>and
+          <strong> &apos;grid-auto-column&apos; </strong>are properties used in
+          CSS Grid Layout to define the size and behavior of implicitly created
+          rows and columns within a grid container. They come into play when you
+          have more grid items than explicitly defined rows or columns.
+        </p>
+        <div class="example">
+          <h3>Example:</h3>
+          <div class="example-1">
+            <h3>1. &apos;grid-auto-row&apos;</h3>
+            <p>
+              This property defines the size of implicitly created rows in a
+              grid. For instance, if our grid has only three explicitly defined
+              rows, and we place a fourth grid item, grid-auto-row will
+              determine the size of this newly added row.
+            </p>
+            <div class="grid-container-row-example">
+              <div class="item-a">1</div>
+              <div class="item-a">2</div>
+              <div class="item-a">3</div>
+              <div class="item-a">4</div>
+            </div>
+            <p>
+              -> In the above example, the grid-template-rows property explicitly
+              defines three rows, each 50px tall. The grid-auto-rows property
+              will set the size of any additional rows that are created beyond
+              these three explicitly defined rows. So, when the fourth grid item
+              is added to the grid, a new row will be created, and its height
+              will be 80px as per the grid-auto-rows property.
+            </p>
+          </div>
+          <div class="example-2">
+            <h3>2. &apos;grid-auto-column&apos;</h3>
+            <p>
+              Similarly, grid-auto-column defines the size of implicitly created
+              columns in a grid layout when the number of grid items exceeds the
+              explicitly defined columns.
+            </p>
+            <div class="grid-container-column-example">
+              <div class="item-b">1</div>
+              <div class="item-b">2</div>
+              <div class="item-b">3</div>
+              <div class="item-b">4</div>
+              <div class="item-b item-5">5</div>
+            </div>
+            <p>
+              -> In this case, the grid-template-columns property explicitly sets
+              two columns, each 100px wide. The grid-auto-columns property is
+              responsible for determining the size of any additional columns
+              that are created beyond these two explicitly defined columns. So,
+              when the fourth grid item is added to the grid, a new column will
+              be created, and its width will be 50px as defined by
+              grid-auto-columns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
