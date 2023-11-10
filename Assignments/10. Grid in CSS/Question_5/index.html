@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 5 | justify-items & justify self difference</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Q. Explain the difference between justify-items and justify-self using code examples. -->
+    <div class="main-container">
+      <div class="question">
+        <h2>
+          Q. Explain the difference between justify-items and justify-self using
+          code examples.
+        </h2>
+      </div>
+      <div class="answer">
+        <h2>A.</h2>
+        <p>
+          In CSS Grid, justify-items and justify-self are properties that
+          control the horizontal alignment of grid items within a grid
+          container. Below is the breakdown of both with examples:
+        </p>
+        <div class="detail">
+          <h3>&apos;justify-items&apos; Property:</h3>
+          <p>
+            &apos;justify-items&apos; is used in the parent grid container to
+            align all the grid items within it along the inline (row) axis.
+          </p>
+        </div>
+
+        <div class="detail">
+          <h3>&apos;justify-self&apos; Property:</h3>
+          <p>
+            &apos;justify-self&apos; is used within individual grid items to
+            override the alignment set by &apos;justify-self&apos; . It allows
+            you to specifically control the horizontal alignment of each grid
+            item.
+          </p>
+        </div>
+
+        <h3>Example:</h3>
+        <div class="grid-container">
+          <div class="grid-item">Item 1</div>
+          <div class="grid-item">Item 2</div>
+          <div class="grid-item">Item 3</div>
+          <div class="grid-item">Item 4</div>
+        </div>
+        <p>
+          In this example,initially, all the grid items inside the grid
+          container were horizontally centered due to the
+          &apos;justify-items&apos;: center property set on the grid container.
+          But, despite the &apos;justify-items&apos;: center set on the grid
+          container, the specific grid item with &apos;justify-self&apos;: end
+          will align itself to the end (right) within its grid cell, overriding
+          the container-level alignment.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
