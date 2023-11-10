@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header,
+main,
+footer {
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #f0ffff;
+  margin-block: 8px;
+  padding: 1em 2em;
+}
+header {
+  padding: 2em;
+  font-weight: 750;
+  text-align: center;
+  font-size: 3rem;
+}
+@media screen and (max-width: 600px) {
+  header {
+    background-color: blue;
+  }
+}
