@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primaryColor: #00b7ff;
+  --secondaryColor: #6c757d;
+}
+.btn {
+  width: max-content;
+  padding: 0.4em 0.6em;
+  border: none;
+  border-radius: 2px;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  margin: 0.2em;
+  letter-spacing: 3px;
+}
+#primaryBtn {
+  background-color: var(--primaryColor);
+}
+#secondaryBtn {
+  background-color: var(--secondaryColor);
+}
