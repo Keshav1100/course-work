@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.cube {
+  position: relative;
+  width: 10em;
+  height: 10em;
+  transform-style: preserve-3d;
+  transform: rotateX(16deg) rotateY(32deg);
+}
+
+.side {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: 2px solid #262626;
+  font-weight: 700;
+  background-color: rgba(0, 167, 255, 0.5);
+}
+
+#front {
+  transform: translateZ(5em);
+}
+#back {
+  transform: rotateY(180deg) translateZ(5em);
+}
+#right {
+  transform: rotateY(90deg) translateZ(5em);
+}
+#left {
+  transform: rotateY(-90deg) translateZ(5em);
+}
+#top {
+  transform: rotateX(90deg) translateZ(5em);
+}
+#bottom {
+  transform: rotateX(-90deg) translateZ(5em);
+}
+
+
