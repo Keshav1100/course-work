@@ -1,0 +1,35 @@
+/* B answer */
+nav ul li a {
+  color: #ff0000;
+}
+nav > h2 {
+  color: #f5f5f5;
+  background-color: #262626;
+}
+header nav div + p {
+  color: #ff0000;
+}
+/* C answer */
+a[href] {
+  color: #ff0000;
+  text-decoration: none;
+}
+a[class="active"] {
+  color: #262626;
+  text-decoration: underline;
+}
+a[target="_self"] {
+  background-color: #ffff00;
+}
+
+/*  D answer */
+header nav p:last-child::after {
+  content: "...";
+}
+header nav ul li::marker {
+  color: #0bc205;
+}
+header nav > p:nth-child(4)::first-letter {
+  color: #ff0000;
+  font-size: 30px;
+}
