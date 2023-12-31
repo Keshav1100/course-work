@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="question">
+        <h2 class="question-heading">
+          Q. Explain the Git Workflow, including the staging area, working
+          directory, and repository.
+        </h2>
+      </div>
+      <div class="answer">
+        <span class="answer-tag">Ans. </span>
+        The Git workflow involves three main components: the working directory,
+        the staging area (also known as the index), and the repository.
+        Understanding how these components interact is crucial for effectively
+        using Git.
+        <br />
+        <ol>
+          <li>
+            <h3>Working Directory:</h3>
+            <ul>
+              <li>
+                The working directory is where you have the actual files of your
+                project. These files are visible and editable by you.
+              </li>
+              <li>
+                When you start working on a project, Git creates a working
+                directory where you can modify and add files.
+              </li>
+              <li>
+                Modifications made in the working directory are not
+                automatically recorded by Git. You need to explicitly tell Git
+                which changes you want to include in the next commit.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Staging Area (Index):</h3>
+            <ul>
+              <li>
+                The staging area is a buffer between the working directory and
+                the repository.
+              </li>
+              <li>
+                When you make changes to your files in the working directory,
+                Git doesn't automatically include those changes in the next
+                commit. Instead, you must use the "git add" command to move
+                changes to the staging area.
+              </li>
+              <li>
+                The staging area allows you to selectively include specific
+                changes in your next commit. This is powerful because it lets
+                you control which modifications are part of the commit.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Repository:</h3>
+            <ul>
+              <li>
+                The repository is where Git permanently stores the project's
+                history, including all committed changes.
+              </li>
+              <li>
+                After you've added changes to the staging area, you use the "git
+                commit" command to create a snapshot of the staging area. This
+                snapshot becomes a commit, and it is stored in the Git
+                repository.
+              </li>
+              <li>
+                Commits are the building blocks of the project's history, and
+                each commit has a unique identifier (hash). Commits include
+                information about who made the changes, when they were made, and
+                a reference to the commit's parent (previous) commit, forming a
+                chain of commits.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
