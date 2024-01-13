@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="question">
+        <h2 class="question-heading">
+          Q. Explain the key differences between JavaScript and HTML. Provide
+          examples of situations where you would use each.
+        </h2>
+      </div>
+      <div class="answer">
+        <span class="answer-tag">Ans. </span>
+
+        <h2>JavaScript:</h2>
+        <ol>
+          <li>
+            <h3>Nature:</h3>
+            <ul>
+              <li>
+                <h4>Programming Language:</h4>
+                JavaScript is a high-level, interpreted, and dynamically-typed
+                programming language.
+              </li>
+              <li>
+                <h4>Logic and Behavior:</h4>
+                It is primarily used for adding logic, interactivity, and
+                behavior to web pages.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Use Cases:</h3>
+            <ul>
+              <li>
+                <h4>Event Handling:</h4>
+                JavaScript is commonly used to handle user interactions, such as
+                clicks, keypresses, and form submissions.
+              </li>
+              <li>
+                <h4>Dynamic Content:</h4>
+                It dynamically updates and modifies content on the client side
+                without requiring a page reload.
+              </li>
+              <li>
+                <h4>Asynchronous Operations:</h4>
+                JavaScript is crucial for asynchronous operations, like fetching
+                data from a server without blocking other operations.
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2>HTML:</h2>
+        <ol>
+          <li>
+            <h3>Nature:</h3>
+            <ul>
+              <li>
+                <h4>Markup Language:</h4>
+                HTML (Hypertext Markup Language) is a markup language used for
+                structuring and presenting content on the web.
+              </li>
+              <li>
+                <h4>Descriptive:</h4>
+                HTML describes the structure of a webpage, defining elements
+                like headings, paragraphs, lists, links, etc.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Use Cases:</h3>
+            <ul>
+              <li>
+                <h4>Document Structure:</h4>
+                HTML is used to define the structure of a webpage, including
+                headings, paragraphs, lists, and more.
+              </li>
+              <li>
+                <h4>Content Presentation:</h4>
+                It determines how content is presented, specifying elements like
+                tables, images, and forms.
+              </li>
+              <li>
+                <h4>Semantic Markup:</h4>
+                HTML uses semantic tags to convey meaning, making the content
+                more accessible and SEO-friendly.
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <div class="ans-example">
+          <h2>Example</h2>
+          <h1>Interactive Button Example</h1>
+
+          <button onclick="changeContent()">Click me</button>
+          <p id="contentParagraph">Initial content.</p>
+          <br /><br />
+          <p><u> In this example:</u></p>
+          <ul>
+            <li>
+              <h4>HTML:</h4>
+              Defines the structure of the webpage, including a button and a
+              paragraph with an initial content. The paragraph has an id
+              attribute for JavaScript to reference.
+            </li>
+
+            <li>
+              <h4>JavaScript:</h4>
+              Defines a function changeContent() that is triggered when the
+              button is clicked. This function uses the getElementById method to
+              access the paragraph and change its content dynamically.
+            </li>
+          </ul>
+
+          This collaboration between HTML and JavaScript creates a simple
+          interactive feature where clicking the button dynamically alters the
+          content of the paragraph on the webpage.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function changeContent() {
+      var paragraph = document.getElementById("contentParagraph");
+      paragraph.innerHTML = "New content after button click!";
+    }
+  </script>
+</html>
