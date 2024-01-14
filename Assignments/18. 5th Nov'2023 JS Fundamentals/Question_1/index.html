@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="question">
+        <h2 class="question-heading">
+          Q. Explain the usage of ternary operator with syntax and write a
+          program to check whether the number is even or odd using the ternary
+          operator.
+        </h2>
+      </div>
+      <div class="answer">
+        <span class="answer-tag">Ans. </span>
+        <p>
+          The ternary operator, also known as the conditional operator, provides
+          a concise way to write a simple conditional (if-else) statement in a
+          single line. Its syntax is as follows:
+        </p>
+        <img
+          src="./code_examples/ex_1.png"
+          alt="code example"
+          class="ans-code-example"
+        />
+        <ul>
+          <li>
+            If the &apos;condition&apos; is true, the
+            &apos;expressionIfTrue&apos; is evaluated.
+          </li>
+          <li>
+            If the &apos;condition&apos; is false, the
+            &apos;expressionIfFalse&apos; is evaluated.
+          </li>
+        </ul>
+        <p>
+          Now, let's write a JavaScript program to check whether a number is
+          even or odd using the ternary operator:
+        </p>
+        <img
+          src="./code_examples/ex_2.png"
+          alt="code example"
+          class="ans-code-example"
+        />
+        <p>In this program:</p>
+        <ol>
+          <li>The example value for the number is set to 7.</li>
+          <li>
+            The ternary operator is used to check if the number is even or odd.
+            The condition number % 2 === 0 checks if the remainder when dividing
+            by 2 is zero.
+          </li>
+          <li>
+            If the condition is true, the string "Even" is assigned to the
+            variable result; otherwise, the string "Odd" is assigned.
+          </li>
+          <li>The result is displayed using console.log.</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
