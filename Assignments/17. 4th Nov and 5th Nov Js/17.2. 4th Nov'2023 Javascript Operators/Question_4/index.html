@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 3</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="question">
+        <h2 class="question-heading">
+          Q. Differentiate between unary, binary, and ternary operators in
+          JavaScript. Give examples of each.
+        </h2>
+      </div>
+      <div class="answer">
+        <span class="answer-tag">Ans. </span>
+        <p>
+          Precedence and associativity are essential concepts when working with
+          multiple operators in an expression. They determine the order in which
+          operations are performed, ensuring that expressions are evaluated
+          correctly.
+        </p>
+
+        <h2>Precedence:</h2>
+        <p>
+          Precedence refers to the priority or order of evaluation among
+          different operators. Higher precedence operators are evaluated first.
+          JavaScript follows a set of rules that dictate the precedence of
+          various operators. For example, in the expression a + b * c,
+          multiplication has higher precedence than addition. Therefore, the
+          multiplication (*) operation is performed first, followed by addition
+          (+).
+        </p>
+
+        <h2>Associativity:</h2>
+        <p>
+          Associativity defines the order in which operators of the same
+          precedence are evaluated. It can be left-to-right or right-to-left.
+          For example, in the expression a = b = c, the assignment operator (=)
+          is right-to-left associative. Therefore, c is assigned to b, and then
+          the result of that assignment is assigned to a.
+        </p>
+        <h2>Importance of Understanding Precedence and Associativity:</h2>
+        <ol>
+          <li>
+            <h3>Correct Evaluation:</h3>
+            <p>
+              Understanding precedence and associativity is crucial for ensuring
+              that expressions are evaluated in the correct order.
+              Misunderstanding these concepts can lead to unexpected results.
+            </p>
+          </li>
+
+          <li>
+            <h3>Code Readability:</h3>
+            <p>
+              Writing code with a clear understanding of precedence and
+              associativity improves readability. It helps convey the intended
+              order of operations to other developers who may read or maintain
+              the code.
+            </p>
+          </li>
+
+          <li>
+            <h3>Avoiding Errors:</h3>
+            <p>
+              Knowing the rules prevents common errors in expressions where the
+              order of operations may be ambiguous. It helps in writing
+              expressions that produce the expected outcomes.
+            </p>
+          </li>
+
+          <li>
+            <h3>Optimizing Code:</h3>
+            <p>
+              In some cases, understanding precedence can help optimize code by
+              eliminating the need for unnecessary parentheses. This can lead to
+              more concise and efficient expressions.
+            </p>
+          </li>
+        </ol>
+
+        <h2>Example:</h2>
+        <img
+          src="./code_examples/ex_1.png"
+          alt="code example"
+          class="ans-code-example"
+        />
+        <p>
+          In this example, the multiplication (*) has higher precedence than
+          addition (+). Therefore, 2 * 3 is evaluated first, and then the result
+          is added to 10. Understanding this precedence is essential for
+          correctly predicting that result will be 16 rather than 36.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
